@@ -1,6 +1,8 @@
-In this mini project I tried to understand #flexbox and its features better and deeper.
+### FLEXBOX
 
-I used #flex_order to reorder elements in different viewpoints and used #flex-basis, #flex-grow, #flex-shrink to adjust items in different screen widths. 
+In this mini project I tried to understand **flexbox** and its features better and deeper.
+
+I used **flex order** to reorder elements in different viewpoints and also made the use of **flex-basis**, **flex-grow**, **flex-shrink** to adjust items in different screen widths. 
 
 
 ### Sources:
