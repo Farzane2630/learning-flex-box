@@ -1,0 +1,155 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: darkslategrey;
+  min-height: 100vh;
+  padding: 2em;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.wrapper > * {
+  order: 9999999;
+}
+
+header {
+  padding: 1em;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.267);
+  margin-block: 1em;
+}
+
+.nav {
+  width: 100%;
+}
+.toggle-nav {
+  display: none;
+  background-color: antiquewhite;
+  text-align: center;
+  text-decoration: none;
+  color: darkcyan;
+  padding-block-start: 0.2em;
+  height: 30px;
+}
+
+ul {
+  width: 100%;
+  border: whitesmoke 2px solid;
+  padding: 1em;
+  margin-block-end: 1em;
+  display: flex;
+}
+
+li {
+  text-align: center;
+  list-style: none;
+  flex: 3;
+}
+
+.social {
+  color: rgb(46, 5, 46);
+  flex: 1;
+}
+
+.hero-img {
+  border: 2px solid whitesmoke;
+  margin-block: 1em;
+}
+
+.hero-img img {
+  height: 100%;
+  max-width: 100%;
+}
+
+.content {
+  color: beige;
+  background-color: rgba(0, 0, 0, 0.747);
+  backdrop-filter: blur(2px);
+  padding: 2em;
+  margin-block: 1em;
+}
+
+.signup {
+  display: flex;
+  border: solid 5px rgba(0, 0, 0, 0.267);
+}
+
+input {
+  height: 2em;
+  flex: 1;
+}
+
+input[type="submit"] {
+  background-color: rgb(4, 100, 100);
+  color: white;
+  border: none;
+  padding-inline: 0.4em;
+  flex-basis: 25%;
+}
+
+.footer {
+  margin-block: 1em;
+  background-color: rgba(0, 0, 0, 0.308);
+  padding: 0.5em;
+  width: 100%;
+  text-align: center;
+}
+
+footer a {
+  color: white;
+  text-decoration: none;
+}
+
+@media (max-width: 750px) {
+  ul {
+    flex-wrap: wrap;
+  }
+
+  li {
+    flex: 1 1 50%;
+  }
+
+  .social {
+    flex: 1 1 20%;
+  }
+}
+
+@media (max-width: 501px) {
+  .toggle-nav {
+    display: block;
+  }
+  .nav ul {
+    display: none;
+  }
+
+  .nav ul.open {
+    display: flex;
+  }
+
+  li {
+    flex-basis: 100%;
+  }
+
+  .nav {
+    order: 1;
+  }
+
+  .header {
+    order: 2;
+  }
+
+  .signup {
+    order: 3;
+  }
+}
