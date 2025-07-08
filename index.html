@@ -7,7 +7,7 @@
     <title>FLEX BOX NAVIGATION BAR</title>
   </head>
   <body>
-    <div class="wrapper">
+    <!-- <div class="wrapper">
       <header class="header">
         <h1>This is an imaginery header for this website</h1>
       </header>
@@ -56,8 +56,60 @@
         >
         !
       </footer>
+    </div> -->
+    <div class="container">
+      <div class="item">1</div>
+      <div class="item">2</div>
+      <div class="item poop">💩️</div>
+      <div class="item">4</div>
+      <div class="item">5</div>
+      <div class="item">6</div>
+      <div class="item">7</div>
+      <div class="item">8</div>
+      <div class="item">9</div>
+      <div class="item">10</div>
     </div>
   </body>
+
+  <style>
+    .container {
+      display: grid;
+      border: 10px solid black;
+      gap: 25px;
+      /* grid-template-columns: 200px auto 100px ; */
+      /* grid-auto-flow: column; */
+      /* grid-auto-columns: 200px; */
+      /* grid-auto-rows: 1fr 200px; */
+      /* grid-template-columns: 1fr auto; */
+      /* grid-template-rows: repeat(auto-fit, minmax(200px, 1fr)); */
+      grid-template-columns: repeat(5, 1fr);
+      /* grid-template-columns: repeat(auto-fit, 100px); */
+      /* grid-template-columns: repeat(auto-fit, minmax(80px, auto)); */
+
+      /* grid-template-areas: 
+      "item-1 item-2 poop item-4 item-5"
+      "item-1 item-2 poop item-4 item-5"
+      ; */
+
+      /* grid-auto-flow: dense; */
+    }
+    .item {
+      background-color: burlywood;
+      text-align: center;
+    }
+    
+    .poop {
+      background: #bada55;
+      grid-area: "poop";
+      /* grid-column: 2 / span 5; */
+      /* grid-row:span 3; */
+      /* grid-column:span 2; */
+      /* grid-column: 2 / 4; */
+      /* grid-column: item-2-start / item-4-end; */
+      /* grid-column-start: item-4; */
+
+    }
+  </style>
 
   <script src="index.js"></script>
 </html>
